@@ -1,0 +1,49 @@
+header
+    background-color: #212529
+    padding: 30px 0
+    z-index: 1
+    position: fixed
+    width: 100%
+    .imgbox
+        width: 100%
+    nav
+        a
+            margin-right: 33px
+            font-size: 20px
+            padding: 10px
+        & :hover
+            color: #ffc800
+            cursor: pointer
+    .box
+        border: 1px solid #5f5e5e
+        padding: 12px
+        border-radius: 10px
+        h1
+            color: #929090
+            font-size: 25px
+            margin-right: 10px
+        .icon
+            font-size: 25px
+            color: #929090
+    @media screen and ( max-width: 1024px )
+        nav
+            display: none
+        .box
+            display: block
+       
+    @media screen and ( min-width: 1024px )
+        nav
+            display: block
+        .box
+            display: none
+            position: absolute
+            h1,.icon
+                display: none
+        
+    @media screen and ( max-width: 500px )
+        .imgbox
+            width: 160px
+        .box
+            padding: 6px
+            .icon,h1
+                font-size: 20px
